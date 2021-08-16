@@ -20,3 +20,7 @@ class PessoaFisica(metaclass = ABCMeta) :
     @abstractmethod
     def __str__(self):
         pass
+
+    @abstractmethod
+    def acessarEscola(self):
+        pass

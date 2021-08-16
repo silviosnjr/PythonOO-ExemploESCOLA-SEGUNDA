@@ -16,3 +16,10 @@ class Aluno(PessoaFisica):
 
     def __str__(self):
         return "Aluno: "+super().nome+" | CPF: "+super().cpf+" | CGM: "+self.__cgm+" | Turma: "+self.turma;
+
+    def acessarEscola(self, codigo_acesso):
+        if(codigo_acesso == self.__cgm):
+            print("Boa aula aluno(a) "+super().nome)
+            return True
+        else :
+            return False
